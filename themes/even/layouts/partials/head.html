@@ -20,7 +20,7 @@
   {{ end }}
   <meta name="author" content="$authorString | safeHTML" />
 {{ else }}
-  {{ $authorString := .Site.Author.name }}
+  {{ $authorString := .Site.Params.Author.name }}
   <meta name="author" content="$authorString | safeHTML" />
 {{ end }}
 
